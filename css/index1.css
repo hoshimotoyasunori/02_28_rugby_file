@@ -1,0 +1,191 @@
+
+html{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height:100vh;
+    width: 100vw;
+}
+body{  
+    width: 100%;
+    height: 100%;
+    margin:0;
+    text-align:center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:  url(../img/oneteam.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.pop{
+    display: none;
+    font-size:500%;
+    size: contain;
+}
+.is-slide{
+    /*background-image: url(../ラグビー/写真/page2.JPG) ;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height:100%;
+    opacity: 1;
+}
+
+header{
+    position: relative;
+    text-align: center;
+    height: 45%;
+    width: 100%;
+    margin-bottom: 3%;
+}
+header p{
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    top: 100%;
+    left: 0;
+  }
+
+
+.page_one{
+    width: 100%;
+    height: 100%;
+}
+.enemy{
+    font-size: 20%;
+    opacity: .3;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width:100%;
+
+}
+.gu-{
+    background-image: url(../img/runのコピー.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 90%;
+}
+
+.ball{
+    width: 10%;
+    height: 40%;
+    opacity: 1;
+}
+.navigate-anchor{
+    width: 8%;
+    height: 50%;
+    opacity: .6;
+    color: white;
+}
+p{
+    font-size:8px;
+    text-align: center;
+    height:16px;
+    width: 100%;
+}
+.cho{
+    background-image: url(../img/scrumのコピー.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 85%;
+}
+.par{
+    background-image: url(../img/lineoutのコピー.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 85%;
+}
+
+
+#gu_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+    widows: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 400%;
+    color: #333;
+}
+#par_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 400%;
+    color: #333;
+}
+#cho_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 400%;
+    color: #333;
+}
+img{
+    opacity: 0;
+}
+li{
+    list-style: none;
+}
+
+#page-animate::before {
+ content: '';
+ position: fixed;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #333;
+ z-index: 9999;
+ pointer-events: none;
+ right: 100%;
+ -webkit-transition: right 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+ transition: right 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+ #page-animate::after {
+ content: '';
+ position: fixed;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #333;
+ z-index: 9999;
+ pointer-events: none;
+ left: 100%;
+ -webkit-transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+ transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+ #page-animate.is-slide-in::before {
+ right: 0;
+}
+ #page-animate.is-slide::after {
+ left: 0;
+}
