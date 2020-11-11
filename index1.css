@@ -72,7 +72,7 @@ main{
 
 }
 .gu-{
-    background-image: url(img/runのコピー.gif);
+    background-image: url(img/run.gif);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -98,7 +98,7 @@ p{
     width: 100%;
 }
 .cho{
-    background-image: url(img/scrumのコピー.gif);
+    background-image: url(img/scrum.gif);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -106,7 +106,7 @@ p{
     height: 85%;
 }
 .par{
-    background-image: url(img/lineoutのコピー.gif);
+    background-image: url(img/lineout.gif);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
