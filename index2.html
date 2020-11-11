@@ -5,23 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
     <title>Document</title>
 </head>
 
-<body class="is-slide" id="page-animate">
-    <header>
-        <h1>WIN</h1>
-    </header>
-    <main>
-        <section class="page_one">
-        </section>
-    </main>
+<body>
+    <video id="arigatou" class="video" muted src="./movie/arigatou.mp4" autoplay></video>
+    <h1 class="win">WIN</h1>
+
     <footer>
-        <article><a href="index1.html" class="navigate-anchor">Click here</a>
-        </article>
-
-
+        <article><a href="index.html" class="navigate-anchor">FIN</a></article>
         <p>
             <copyrights>2016-2018 Cheeese Academy Fukuoka All RIghts Reserved.</copyrights>
         </p>
@@ -53,8 +46,17 @@
 
         });
 
-
     </script>
+    <!-- <script>
+        $(function () {
+            var player = $('#arigatou').get(0);	//videoタグの要素を取得
+            //動画の再生
+            //動画が終了したことを検出して発火する処理
+            player.addEventListener('ended', function () {
+                $('location').attr(href = "index.html");	//videoタグをDOM的に削除
+            });
+        });
+    </script> -->
 
 </body>
 
