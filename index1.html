@@ -60,72 +60,7 @@
         <article><a href="index.html" class="navigate-anchor">BACK</a></article>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(function () {
-            var player = $('#movie1').get(0);	//videoタグの要素を取得
-            //動画の再生
-            //動画が終了したことを検出して発火する処理
-            player.addEventListener('ended', function () {
-                document.location.assign('index2.html');	//videoタグをDOM的に削除
-            });
-        });
-        $(function () {
-            var player = $('#movie2').get(0);	//videoタグの要素を取得
-            //動画の再生
-            //動画が終了したことを検出して発火する処理
-            player.addEventListener('ended', function () {
-                document.location.assign('index3.html');		//videoタグをDOM的に削除
-            });
-        });
-        $(function () {
-            var player = $('#movie3').get(0);	//videoタグの要素を取得
-            player.play();	//動画の再生
-            //動画が終了したことを検出して発火する処理
-            player.addEventListener('ended', function () {
-                document.location.assign('index2.html');		//videoタグをDOM的に削除
-            });
-        });
-        $(function () {
-            var player = $('#movie4').get(0);	//videoタグの要素を取得
-            player.play();	//動画の再生
-            //動画が終了したことを検出して発火する処理
-            player.addEventListener('ended', function () {
-                document.location.assign('index3.html');		//videoタグをDOM的に削除
-            });
-        });
-        $(function () {
-            var player = $('#movie5').get(0);	//videoタグの要素を取得
-            player.play();	//動画の再生
-            //動画が終了したことを検出して発火する処理
-            player.addEventListener('ended', function () {
-                document.location.assign('index2.html');		//videoタグをDOM的に削除
-            });
-        });
-        $(function () {
-            var player = $('#movie6').get(0);	//videoタグの要素を取得
-            player.play();	//動画の再生
-            //動画が終了したことを検出して発火する処理
-            player.addEventListener('ended', function () {
-                document.location.assign('index3.html');		//videoタグをDOM的に削除
-            });
-        });
-        $(function () {
-            var player = $('#movie7').get(0);	//videoタグの要素を取得
-            //動画の再生
-            //動画が終了したことを検出して発火する処理
-            player.addEventListener('ended', function () {
-                $('location').attr(href = "index.html");	//videoタグをDOM的に削除
-            });
-        });
-        $(function () {
-            var player = $('#movie8').get(0);	//videoタグの要素を取得
-            //動画の再生
-            //動画が終了したことを検出して発火する処理
-            player.addEventListener('ended', function () {
-                $('location').attr(href = "index4.html");		//videoタグをDOM的に削除
-            });
-        });
-    </script>
+
     <script>
         // jQuery(function ($) {
         //     var movie = document.getElementById("movie1");
@@ -209,20 +144,54 @@
                     count = count + 1;
                     console.log(count)
                     // あいこの時
-                    document.getElementById("movie7").style.display = "block";
+                    document.getElementById("movie8").style.display = "block";
                     console.log('even');
+                    $(function () {
+                        var player = $('#movie8').get(0);	//videoタグの要素を取得
+                        //動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            $('location').attr(href = "index1.html");	//videoタグをDOM的に削除
+                        });
+                    });
                     if (count == 3) {
                         // あいこが３回続いた時
-                        document.getElementById("movie8").style.display = "block";
+                        document.getElementById("movie7").style.display = "block";
+                        $(function () {
+                            var player = $('#movie7').get(0);	//videoタグの要素を取得
+                            //動画の再生
+                            //動画が終了したことを検出して発火する処理
+                            player.addEventListener('ended', function () {
+                                $('location').attr(href = "index4.html");		//videoタグをDOM的に削除
+                            });
+                        });
                     }
+
+
                 } else if (rand == 1) {
                     // 勝ちの時
                     document.getElementById("movie1").style.display = "block";
                     console.log('win');
+                    $(function () {
+                        var player = $('#movie1').get(0);	//videoタグの要素を取得
+                        //動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            document.location.assign('index2.html');	//videoタグをDOM的に削除
+                        });
+                    });
                 } else if (rand == 2) {
                     // 負けの時
                     document.getElementById("movie2").style.display = "block";
                     console.log('lose');
+                    $(function () {
+                        var player = $('#movie2').get(0);	//videoタグの要素を取得
+                        //動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            document.location.assign('index3.html');		//videoタグをDOM的に削除
+                        });
+                    });
                 } else {
                     console.log('エラー');
                 }
@@ -237,20 +206,54 @@
                     // 負けの時
                     document.getElementById("movie3").style.display = "block";
                     console.log('lose');
+                    $(function () {
+                        var player = $('#movie3').get(0);	//videoタグの要素を取得
+                        player.play();	//動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            document.location.assign('index2.html');		//videoタグをDOM的に削除
+                        });
+                    });
                 } else if (rand == 1) {
                     count = count + 1;
                     console.log(count)
                     // あいこの時
-                    document.getElementById("movie7").style.display = "block";
+                    document.getElementById("movie8").style.display = "block";
                     console.log('even');
-                    if (count == 3) {
-                        // あいこが３回続いた時
-                        document.getElementById("movie8").style.display = "block";
-                    }
+                    $(function () {
+                        var player = $('#movie8').get(0);	//videoタグの要素を取得
+                        //動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            $('location').attr(href = "index1.html");	//videoタグをDOM的に削除
+                        });
+
+                        if (count == 3) {
+                            // あいこが３回続いた時
+                            document.getElementById("movie7").style.display = "block";
+                            $(function () {
+                                var player = $('#movie7').get(0);	//videoタグの要素を取得
+                                //動画の再生
+                                //動画が終了したことを検出して発火する処理
+                                player.addEventListener('ended', function () {
+                                    $('location').attr(href = "index4.html");		//videoタグをDOM的に削除
+                                });
+                            });
+                        };
+                    });
+
                 } else if (rand == 2) {
                     // 勝ちの時
                     document.getElementById("movie4").style.display = "block";
                     console.log('win');
+                    $(function () {
+                        var player = $('#movie4').get(0);	//videoタグの要素を取得
+                        player.play();	//動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            document.location.assign('index3.html');		//videoタグをDOM的に削除
+                        });
+                    });
                 } else {
                     console.log('エラー');
                 }
@@ -265,19 +268,52 @@
                     // 勝ちの時
                     document.getElementById("movie5").style.display = "block";
                     console.log('win');
+                    $(function () {
+                        var player = $('#movie5').get(0);	//videoタグの要素を取得
+                        player.play();	//動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            document.location.assign('index2.html');		//videoタグをDOM的に削除
+                        });
+                    });
                 } else if (rand == 1) {
                     // 負けの時
                     document.getElementById("movie6").style.display = "block";
                     console.log('lose');
+                    $(function () {
+                        var player = $('#movie6').get(0);	//videoタグの要素を取得
+                        player.play();	//動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            document.location.assign('index3.html');		//videoタグをDOM的に削除
+                        });
+                    });
                 } else if (rand == 2) {
                     count = count + 1;
                     console.log(count)
                     // あいこの時
-                    document.getElementById("movie7").style.display = "block";
+                    document.getElementById("movie8").style.display = "block";
                     console.log('even');
+                    $(function () {
+                        var player = $('#movie8').get(0);	//videoタグの要素を取得
+                        //動画の再生
+                        //動画が終了したことを検出して発火する処理
+                        player.addEventListener('ended', function () {
+                            $('location').attr(href = "index1.html");	//videoタグをDOM的に削除
+                        });
+                    });
+
                     if (count == 3) {
                         // あいこが３回続いた時
-                        document.getElementById("movie8").style.display = "block";
+                        document.getElementById("movie7").style.display = "block";
+                        $(function () {
+                            var player = $('#movie7').get(0);	//videoタグの要素を取得
+                            //動画の再生
+                            //動画が終了したことを検出して発火する処理
+                            player.addEventListener('ended', function () {
+                                $('location').attr(href = "index4.html");		//videoタグをDOM的に削除
+                            });
+                        });
                     }
                 } else {
                     console.log('エラー');
@@ -286,6 +322,7 @@
         });
 
     </script>
+
 </body>
 
 </html>
