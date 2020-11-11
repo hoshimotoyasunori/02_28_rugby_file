@@ -15,79 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index1.css">
     <title>Document</title>
-    <style>
-        #movie1 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 200%;
-            background: black;
-            z-index: 9999999999;
-        }
 
-        #movie2 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 200%;
-            background: black;
-            z-index: 9999999999;
-        }
-
-        #movie3 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 200%;
-            background: black;
-            z-index: 9999999999;
-        }
-
-        #movie4 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 200%;
-            background: black;
-            z-index: 9999999999;
-        }
-
-        #movie5 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 200%;
-            background: black;
-            z-index: 9999999999;
-        }
-
-        #movie6 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 200%;
-            background: black;
-            z-index: 9999999999;
-        }
-
-        #movie7 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 200%;
-            background: black;
-            z-index: 9999999999;
-        }
-
-        #movie8 {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 200%;
-            background: black;
-            z-index: 9999999999;
-        }
-    </style>
 </head>
 
 <body class="is-slide" id="page-animate">
@@ -112,8 +40,8 @@
         <video id="movie4" class="pop" src="movie/scrum_enemyのコピー.mp4" autoplay muted></video>
         <video id="movie5" class="pop" src="movie/lineout_myのコピー.mp4" autoplay muted></video>
         <video id="movie6" class="pop" src="movie/lineout_enemyのコピー.mp4" autoplay muted></video>
-        <video id="movie7" class="pop" src="movie/危険.mp4" autoplay muted></video>
-        <video id="movie8" class="pop" src="movie/キック成功のコピー.mp4" autoplay muted></video>
+        <video id="movie7" class="pop" src="movie/キック成功のコピー.mp4" autoplay muted></video>
+        <video id="movie8" class="pop" src="movie/istockphoto-472757249-640_adpp_isのコピー.mp4" autoplay muted></video>
 
 
         <!-- <div class="enemy" id="com_hand">相手は？</div>  -->
@@ -135,7 +63,7 @@
     <script>
         $(function () {
             var player = $('#movie1').get(0);	//videoタグの要素を取得
-            player.play();	//動画の再生
+            //動画の再生
             //動画が終了したことを検出して発火する処理
             player.addEventListener('ended', function () {
                 document.location.assign('index2.html');	//videoタグをDOM的に削除
@@ -143,7 +71,7 @@
         });
         $(function () {
             var player = $('#movie2').get(0);	//videoタグの要素を取得
-            player.play();	//動画の再生
+            //動画の再生
             //動画が終了したことを検出して発火する処理
             player.addEventListener('ended', function () {
                 document.location.assign('index3.html');		//videoタグをDOM的に削除
@@ -183,15 +111,15 @@
         });
         $(function () {
             var player = $('#movie7').get(0);	//videoタグの要素を取得
-            player.play();	//動画の再生
+            //動画の再生
             //動画が終了したことを検出して発火する処理
             player.addEventListener('ended', function () {
-                $('location').attr(href = "index4.html");	//videoタグをDOM的に削除
+                $('location').attr(href = "index.html");	//videoタグをDOM的に削除
             });
         });
         $(function () {
             var player = $('#movie8').get(0);	//videoタグの要素を取得
-            player.play();	//動画の再生
+            //動画の再生
             //動画が終了したことを検出して発火する処理
             player.addEventListener('ended', function () {
                 $('location').attr(href = "index4.html");		//videoタグをDOM的に削除
@@ -199,38 +127,38 @@
         });
     </script>
     <script>
-        jQuery(function ($) {
-            var movie = document.getElementById("movie1");
-            movie.controls = false;
-        });
-        jQuery(function ($) {
-            var movie = document.getElementById("movie2");
-            movie.controls = false;
-        });
-        jQuery(function ($) {
-            var movie = document.getElementById("movie3");
-            movie.controls = false;
-        });
-        jQuery(function ($) {
-            var movie = document.getElementById("movie4");
-            movie.controls = false;
-        });
-        jQuery(function ($) {
-            var movie = document.getElementById("movie5");
-            movie.controls = false;
-        });
-        jQuery(function ($) {
-            var movie = document.getElementById("movie6");
-            movie.controls = false;
-        });
-        jQuery(function ($) {
-            var movie = document.getElementById("movie7");
-            movie.controls = false;
-        });
-        jQuery(function ($) {
-            var movie = document.getElementById("movie8");
-            movie.controls = false;
-        });
+        // jQuery(function ($) {
+        //     var movie = document.getElementById("movie1");
+        //     movie.controls = false;
+        // });
+        // jQuery(function ($) {
+        //     var movie = document.getElementById("movie2");
+        //     movie.controls = false;
+        // });
+        // jQuery(function ($) {
+        //     var movie = document.getElementById("movie3");
+        //     movie.controls = false;
+        // });
+        // jQuery(function ($) {
+        //     var movie = document.getElementById("movie4");
+        //     movie.controls = false;
+        // });
+        // jQuery(function ($) {
+        //     var movie = document.getElementById("movie5");
+        //     movie.controls = false;
+        // });
+        // jQuery(function ($) {
+        //     var movie = document.getElementById("movie6");
+        //     movie.controls = false;
+        // });
+        // jQuery(function ($) {
+        //     var movie = document.getElementById("movie7");
+        //     movie.controls = false;
+        // });
+        // jQuery(function ($) {
+        //     var movie = document.getElementById("movie8");
+        //     movie.controls = false;
+        // });
 
 
         // document.getElementById("movie1").style.display = "none";
@@ -258,8 +186,8 @@
                     $('body').addClass('is-slide-in'); // 画面遷移前のアニメーション is-slide-in
 
                     setTimeout(function () {
-                        window.location = url;  // 0.7秒後に取得したURLに遷移
-                    }, 800);
+                        window.location = url;  // 0.5秒後に取得したURLに遷移
+                    }, 500);
                 }
                 return false;
             });
@@ -281,7 +209,7 @@
                     count = count + 1;
                     console.log(count)
                     // あいこの時
-                    document.getElementById("movie2").style.display = "block";
+                    document.getElementById("movie7").style.display = "block";
                     console.log('even');
                     if (count == 3) {
                         // あいこが３回続いた時

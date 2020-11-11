@@ -189,3 +189,75 @@ li{
  #page-animate.is-slide::after {
  left: 0;
 }
+
+ #movie1 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            background: black;
+            z-index: 9999999999;
+        }
+
+#movie2 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            background: black;
+            z-index: 9999999999;
+        }
+
+#movie3 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            background: black;
+            z-index: 9999999999;
+        }
+
+#movie4 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            background: black;
+            z-index: 9999999999;
+        }
+
+#movie5 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            background: black;
+            z-index: 9999999999;
+        }
+#movie6 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            background: black;
+            z-index: 9999999999;
+        }
+
+#movie7 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            background: black;
+            z-index: 9999999999;
+        }
+
+        #movie8 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            background: black;
+            z-index: 9999999999;
+        }
+    
