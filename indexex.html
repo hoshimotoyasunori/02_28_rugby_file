@@ -10,14 +10,12 @@
 </head>
 
 <body class="win3">
-    <video id="arigatou" class="video" muted src="./movie/arigatou.mp4" autoplay></video>
-    <h1 class="win">WIN</h1>
+    <video id="exmovie" class="video" muted src="movie/exmovie.mp4" autoplay></video>
+
 
     <footer>
-        <article><a href="index.html" class="navigate-anchor">FIN</a></article>
-        <p>
-            <copyrights>2016-2018 Cheeese Academy Fukuoka All RIghts Reserved.</copyrights>
-        </p>
+        <article><a href="index.html" class="navigate-anchor">back</a></article>
+
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -46,16 +44,22 @@
 
         });
 
-    </script>
-    <script>
         $(function () {
-            var player = $('#arigatou').get(0); //videoタグの要素を取得
-            //動画の再生
+            var player = $('#exmovie').get(0);	//videoタグの要素を取得
+            player.play();	//動画の再生
             //動画が終了したことを検出して発火する処理
             player.addEventListener('ended', function () {
-                $('#arigatou').remove(); //videoタグをDOM的に削除
+                document.location.assign('index1.html');		//videoタグをDOM的に削除
             });
         });
+        // $(function () {
+        //     var player = $('#exmovie').get(0); //videoタグの要素を取得
+        //     //動画の再生
+        //     //動画が終了したことを検出して発火する処理
+        //     player.addEventListener('ended', function () {
+        //         $('location').attr(href = "index1.html") //videoタグをDOM的に削除
+        //     });
+        // });
     </script>
     <!-- <script>
         $(function () {

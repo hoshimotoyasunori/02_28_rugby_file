@@ -26,6 +26,23 @@ video {
     background-position: center;
     opacity: 0.8;
 }
+.win3{
+    background-image: url(img/2019win.jpg);
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    text-align:center;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+   
+}
 .win{
     color: black;
     font-size: 200px;

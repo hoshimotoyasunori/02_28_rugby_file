@@ -25,6 +25,8 @@ body{
     background-image: url(img/oneteam.png) ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
+
     background-position: center;
     opacity: 1;
 }
@@ -33,6 +35,7 @@ body{
     
     width: 100%;
     height:100%;
+    
     
 }
 header{
@@ -84,7 +87,7 @@ p{
  top: 0;
  width: 100%;
  height: 100%;
- background-color: #333;
+ background-color: black;
  z-index: 9999;
  pointer-events: none;
  right: 100%;
@@ -97,7 +100,7 @@ p{
  top: 0;
  width: 100%;
  height: 100%;
- background-color: #333;
+ background-color: black;
  z-index: 9999;
  pointer-events: none;
  left: 100%;
@@ -109,4 +112,7 @@ p{
 }
  #page-animate.is-slide::after {
  left: 0;
+}
+.drow3{
+    background-color: black;
 }
